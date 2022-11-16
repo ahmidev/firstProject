@@ -1,0 +1,5 @@
+Fonts
+HEADINGS
+"Varela Round", sans-serif
+BODY
+"Times New Roman"
