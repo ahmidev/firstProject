@@ -1,238 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" type = "text/css" href = "http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" >   
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d632d302b9.js" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar Responsive</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <div class="logo">
-            <img src="assets/logoWild.png" alt="" id="imgLogo">
-        </div>
+    
+    <div class="containerGlobal">
+
+        <header class="navbar">
+
+ 
+                <div class="contLogo">
+                    <img src="assets/logoWild.png" alt="logo wild code school">
+                </div>
+
+                <nav class="contItems">    
+                    <a href="#" class="items">Home</a>
+                    <a href="#" class="items">Walders</a>
+                    <a href="#" class="items">Contact</a>
+                    
+                </nav>
+
+                <div class="btnResponsiveMenu">
+                    <div class="lignes"></div>
+                    <div class="lignes"></div>
+                    <div class="lignes"></div>
+                </div>
+          
+         
+
+        </header>
+        <!-- first section with main image and formatter card -->
         
-        <nav class="navBar">
-            <ul>
-                <li><a href="#" class="item-nav">Home</a></li>
-                <li><a href="#" class="item-nav"></a>The Wilders</li>
-                <li><a href="#" class="item-nav"></a>Contact</li>
+        <section class="firstSection" id="first">
+            <div class="containerImgTitle">
+                <div class="containerImg">
+                    <img src="assets/photoGroupe.jpg" alt="wilders group photo">
+                    <div class="test"></div>
+                </div>
                 
-            </ul>
-        </nav>
-    </header>
+                
+                <div class="title">
+                    <h1>Promo des Wilders</h1>
+                    <p>novembre 2022</p>
 
-    <!-- first section with main image and formatter card -->
-    <section class="firstSection" id="first">
-        <div class="containerImg">
-            <img src="assets/photoGroupe.jpg" alt="wilders group photo">
-            <div class="title">
-                <h1>Promo des Wilders</h1>
-                <p>novembre 2022</p>
-
+                </div>
+                
+            </div>
+            <div class="formerCard">
+                <img src="assets/youssef.png" alt=" former" class="youssef">
+                <div class="formerName">
+                    <h2>Formateur</h2>
+                    <p>Youssef SLIM</p>
+                </div>
+                    
             </div>
             
-        </div>
-        <div class="formerCard">
-            <img src="assets/youssef.png" alt=" former" class="youssef">
-            <div class="formerName">
-                <h2>Formateur</h2>
-                <p>Youssef SLIM</p>
-            </div>
-                
-        </div>
-        
-    </section>
-
-    <!-- second section with the search fields, the filter and the maps of each wilder -->
-
-    <section class="secondSection" id="second">
-        <div class="parameter">
-            <div class="search">
-                <label for="">Recherche par nom</label>
-                <input type="text">
-            </div>
-
-            <div class="filter">
-                <p>Filter</p>
-                <label class="switch">
-                    <input type="checkbox" />
-                    <span>Homme</span>
-                </label>
-                <label class="switch">
-                    <input type="checkbox" />
-                    <span>Femme</span>
-                </label>       
-                
-            </div>
-        </div>
-        <div class="cardsWilders">
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
-            <div class="card-wilder">   
-                <div class="containerImgWalder">
-                    <img src="assets/fille1.jpg" alt="wilder photo">
-                </div>
-                <h2>Nom Prénom</h2>
-                <button>Voir plus</button>
-            </div>
+        </section>
 
 
-
-        </div>
-    </section>
-
-
-    <!-- last section for the form -->
-
-    <section class="contact">
-        <div class="containerContact">
-            <div class="icone">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h2>Contact the wilders</h2>
-            <form action="" id="contactForm">
-                <fieldset>
-                <label for="nom">Nom</label>
-                <input type="text" id="name" placeholder="Ecrire votre nom">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Ecrire votre email">
-                <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Ecrire votre message"></textarea>
-
-                </fieldset>
-                
-            </form>
-        </div>
-    </section>
-
-    <footer><p>© Wild Code School 2022</p></footer>
-
-
-
-
+        <section class="secondSection" id="second">
+            <div class="parameter">
+                <div class="search">
+                    <label for="">Recherche par nom</label>
+                    <input type="text">
+                </div>
     
+                <div class="filter">
+                    <p>Filter</p>
+                    <div class="homme">
+                        <p>Homme</p>
+                        <!-- <input type="checkbox" id="box" /> -->
+                        <label   for="box">Homme</label>               
+                          
+                    </div>
+                    <div class="femme">
+                        <p>Femme</p>
+                        <label  class="switch">
+                            <input type="checkbox" id="checkboxFemme" />
+                            <span></span>
+                        </label> 
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="cardsWilders">
+                <input type="checkbox" id="box" />
+                        <label   for="box">Homme</label>    
+                <div class="card-wilder" id="femme" >   
+                    <div class="containerImgWalder" >
+                        <img src="assets/fille2.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder" id="femme"> 
+                    
+                    
+                    <div class="containerImgWalder " >
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder" id="homme">   
+                    <div class="containerImgWalder" >
+                        <img src="assets/homme1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder" id="homme">   
+                    <div class="containerImgWalder" >
+                        <img src="assets/homme2.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <!-- <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div>
+                <div class="card-wilder">   
+                    <div class="containerImgWalder">
+                        <img src="assets/fille1.jpg" alt="wilder photo">
+                    </div>
+                    <h2>Nom Prénom</h2>
+                    <button>Voir plus</button>
+                </div> -->
+    
+    
+    
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
