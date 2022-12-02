@@ -47,9 +47,9 @@ const animalsToAdopt = [
     }
   ];
 
-  for (let cat of animalsToAdopt) {
+  
     for(let wal of walders){
-        createCard(wal.nom, cat.picture);
+        createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photo);
     }
     
-  }
+  

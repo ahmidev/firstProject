@@ -1,5 +1,0 @@
-text:
-font-family: 'Raleway', sans-serif;
-
-Title:
-font-family: 'Varela Round', sans-serif;

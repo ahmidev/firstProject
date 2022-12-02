@@ -6,7 +6,7 @@ export const walders = [
         email : "himed.abidar@gmail.com",
         githubId : "himedsoso",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/himed.png"
     },
     {
         nom : "AIT OUALI",
@@ -15,7 +15,7 @@ export const walders = [
         email : "ahmid.aitouali@gmail",
         githubId : "ahmidev",
         presentation : "Ancien agent de maintenance TGV en reconversion dans le developpement web",
-        photo : ""
+        photo : "./assets/images/ahmid.png"
     },
     {
         nom : "BA",
@@ -24,7 +24,7 @@ export const walders = [
         email : "pro.mustapha@gmail.com",
         githubId : "mustaphayaffa",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit."  ,
-        photo : ""
+        photo : "./assets/images/mouss.png"
     },
     {
         nom : "Beye",
@@ -33,7 +33,7 @@ export const walders = [
         email : "alioune.beye@gmail.com",
         githubId : "beyealioune",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/alioune.png"
     },
     {
         nom : "BLESCH",
@@ -42,7 +42,7 @@ export const walders = [
         email : "wcsrickaed22@gmail.com",
         githubId : "rickaed",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/cedricB.png"
     },
     {
         nom : "Blonski",
@@ -51,7 +51,7 @@ export const walders = [
         email : "sebblonski77@gmail.com",
         githubId : "YunSef",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/seb.png"
     },
     {
         nom : "BOUCHER",
@@ -60,7 +60,7 @@ export const walders = [
         email : "lauriebou1984@gmail.com",
         githubId : "Laurie77170",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/laurie.png"
     },
     {
         nom : "CONIL",
@@ -69,7 +69,7 @@ export const walders = [
         email : "sandraconil77@gmail.com",
         githubId : "SandraConil",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/sandra.png"
     },
     {
         nom : "COUFFIGNAL",
@@ -78,7 +78,7 @@ export const walders = [
         email : "cedric.couffignal.sncf@gmail.com",
         githubId : "CouffignalCedric",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/cedricC.png"
     },
     {
         nom : "CRITELLI",
@@ -87,7 +87,7 @@ export const walders = [
         email : "alicia.critelli4@gmail.com",
         githubId : "Meecore4",
         presentation : "Ancienne agent commercial, travaille sur l'annuaire ^^",
-        photo : ""
+        photo : "./assets/images/alicia.png"
     },
     {
         nom : "Doucet",
@@ -96,7 +96,7 @@ export const walders = [
         email : "alexandredoucet.fr@gmail.com",
         githubId : "AlexDoucet",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/alex.png"
     },
     {
         nom : "FUENTE",
@@ -105,16 +105,16 @@ export const walders = [
         email : "nf02112022@gmail.com",
         githubId : "Apollo02112022",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/nicolasF.png"
     },
     {
         nom : "GOURMEL",
-        prenom :"NERIC" ,
+        prenom :"ERIC" ,
         dateNaissance : "01/07/1972",
         email : "pulprico@gmail.com",
         githubId : "Gourmel",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/ericG.png"
     },
     {
         nom : "GUY",
@@ -123,7 +123,7 @@ export const walders = [
         email : "guynicolas60@gmail.com",
         githubId : "NewDeVGUY60",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/nicolasG.png"
     },
     {
         nom : "KADOUR",
@@ -132,7 +132,7 @@ export const walders = [
         email : "mohamedkadourparis@gmail.com",
         githubId : "Momopeace",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/mohamed.png"
     },
     {
         nom : "KHALFALLAH",
@@ -141,7 +141,7 @@ export const walders = [
         email : "khalfallah.razzak@gmail.com",
         githubId : "RazzakKhal",
         presentation : "Ancien conducteur de train, en formation pour devenir développeur",
-        photo : ""
+        photo : "./assets/images/razzak.png"
     },
     {
         nom : "PERISSUTTI",
@@ -150,7 +150,7 @@ export const walders = [
         email : "samy.perissutti@gmail.com",
         githubId : "samsamfisher",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
-        photo : ""
+        photo : "./assets/images/samy.png"
     },
     {
         nom : "Reydet",
@@ -159,6 +159,6 @@ export const walders = [
         email : "ereydet@gmail.com",
         githubId : "Reydet-Eric",
         presentation : "Ancien conducteur FRET, ex-gestionnaire Prime  en reconversion develeoppeur Web",
-        photo : ""
+        photo : "./assets/images/ericR.png"
     }
 ];

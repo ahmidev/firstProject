@@ -188,7 +188,7 @@ header {
   }
   .card {
     border-radius: 10px;
-    width: 200px;
+    width: 300px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -198,12 +198,18 @@ header {
     border-radius: 10px 10px 0 0;
     background-size: cover;
     background-position: center;
-    background-image: url("http://placekitten.com/200/300");
-    height: 200px;
+    background-position-y:top;
+    background-color: antiquewhite;
+    height: 300px;
     width: 100%;
+    border-radius: 15px;
   }
   .card-body {
     padding: 10px 20px;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px;
   }
   .card-body h2 {
     margin: 10px 0px;
@@ -214,4 +220,5 @@ header {
     height: 50px;
     background-color: lightblue;
     width: 100%;
+    cursor: pointer;
   }

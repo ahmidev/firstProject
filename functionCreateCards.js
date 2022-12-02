@@ -29,7 +29,7 @@ export function createCard(title, imageUrl) {
     const cardButton = document.createElement("button");
     cardButton.classList.add("card-button");
     // set the text inside the tag to be "Adopt Now"
-    cardButton.innerHTML = "Adopt Now";
+    cardButton.innerHTML = "Voir plus";
   
     // and add it to the cardBody
     cardBody.appendChild(cardButton);
