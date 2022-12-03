@@ -199,14 +199,14 @@ header {
     background-size: cover;
     background-position: center;
     background-position-y:top;
-    background-color: antiquewhite;
+    background-color: rgb(195, 195, 194);
     height: 300px;
     width: 100%;
     border-radius: 15px;
   }
   .card-body {
     padding: 10px 20px;
-    background-color: antiquewhite;
+    background-color: rgb(196, 196, 196);
     text-align: center;
     border-radius: 15px;
     margin-top: 10px;
@@ -221,4 +221,44 @@ header {
     background-color: lightblue;
     width: 100%;
     cursor: pointer;
+  }
+
+
+  #pop {
+    display: none;
+  }
+  #pop.active {
+    display: block;
+   
+  }
+  #fenetre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #modale {
+    width: 300px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 25px;
+   
+  }
+  #modale h2 {
+    font-weight: 400;
+  }
+  #modale img {
+    border-radius: 15px;
+    margin: auto;
+    width: 300px;
+  }
+  #modale p {
+    text-align: justify;
+    margin-top: 20px;
   }
