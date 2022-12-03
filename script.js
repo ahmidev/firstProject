@@ -24,55 +24,58 @@ itemNav.forEach(item =>{
     })
 })
 
-const animalsToAdopt = [
-    {
-      name: "Lucky",
-      picture: "https://placekitten.com/200/287"
-    },
-    {
-      name: "Symba",
-      picture: "https://placekitten.com/200/139"
-    },
-    {
-      name: "Léo",
-      picture: "https://placekitten.com/200/90"
-    },
-    {
-      name: "Milo",
-      picture: "https://placekitten.com/200/194"
-    },
-    {
-      name: "Charly",
-      picture: "https://placekitten.com/200/179"
-    }
-  ];
 
-  
+
+  // cards for walders 
     for(let wal of walders){
-        createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photo);
+        createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photoNb);
+        
+  
     }
+    let cardImg = document.querySelectorAll('.card-img');
+    //console.log(cardImg)
     
+    for(let i =0 ; i < cardImg.length; i++){
+        //console.log(cardImg[i])
+        cardImg
+        cardImg[i].addEventListener('mouseover', ()=>{
+            //console.log(walders[i].photo);
+            cardImg[i].style.backgroundImage = `url(${walders[i].photo})`;
+            cardImg[i].style.transition = `all 1s`;
+            
+        })
+        cardImg[i].addEventListener('mouseleave', ()=>{
+            //console.log(walders[i].photo);
+            cardImg[i].style.backgroundImage = `url(${walders[i].photoNb})`;
+            cardImg[i].style.transition = `all 2s`;
+        })
+    }
 
 
 
-    let bouton1 = document.querySelectorAll(".card-button");
-     console.log(bouton1)
+let boutons = document.querySelectorAll(".card-button");
+     //console.log(bouton1)
 
 let pop = document.querySelector("#pop");
 // Variables liées à la modale
 let h2 = document.querySelector("#modale h2");
 let img = document.querySelector("#modale img");
 let p = document.querySelector("#modale p");
-
-for(let i = 0; i < bouton1.length; i++){
+let github = document.querySelector('#github');
+let mail = document.querySelector('#mail');
+console.log(github)
+for(let i = 0; i < boutons.length; i++){
     // console.log(val)
-    bouton1[i].addEventListener("click", function () {
+    boutons[i].addEventListener("click", function (e) {
+   console.log(e)
     pop.classList.add("active");
     h2.innerText = walders[i].nom.toUpperCase()+" "+walders[i].prenom;
     img.setAttribute("src", walders[i].photo);
     // img.setAttribute("alt", this.dataset.nom);
     img.getAttribute("src");
     p.innerHTML = walders[i].presentation;
+    github.href =`https://github.com/${walders[i].githubId}`;
+    mail.href = `mailto:${walders[i].email}`;
   });
 }
   

@@ -10,6 +10,8 @@ export function createCard(title, imageUrl) {
   
     const cardImg = document.createElement("div");
     cardImg.style.backgroundImage = `url(${imageUrl})`;
+    cardImg.style.cursor = "pointer";
+    cardImg.style.transition = `all 1s`;
     cardImg.classList.add("card-img");
     cardHeader.appendChild(cardImg);
   

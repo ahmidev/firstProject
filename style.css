@@ -203,7 +203,9 @@ header {
     height: 300px;
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
   }
+  
   .card-body {
     padding: 10px 20px;
     background-color: rgb(196, 196, 196);
