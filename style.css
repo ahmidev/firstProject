@@ -1,5 +1,5 @@
 body {
-    background: rgb(105, 105, 105);
+    background: rgb(240, 240, 240);
     font-family: sans-serif;
     
 }
@@ -209,6 +209,8 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
+  
   }
   .card {
     border-radius: 10px;
@@ -216,7 +218,8 @@ header {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 10px 11px 11px -1px rgba(0,0,0,0.7);
+    
   }
   .card-img {
     border-radius: 10px 10px 0 0;
@@ -246,7 +249,7 @@ header {
     border: none;
     border-radius: 10px;
     height: 50px;
-    background-color: lightblue;
+    background-color:#ee8a8a;
     width: 100%;
     cursor: pointer;
   }
@@ -264,7 +267,7 @@ header {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 10px 11px 11px -1px rgba(0,0,0,0.7);
   }
   .card-img-former {
     border-radius: 10px 10px 0 0;
@@ -294,7 +297,7 @@ header {
     border: none;
     border-radius: 10px;
     height: 50px;
-    background-color: lightblue;
+    background-color:#ee8a8a;
     width: 100%;
     cursor: pointer;
   }
@@ -330,6 +333,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 15px 15px 12px 3px rgba(0,0,0,0.76);
    
   }
   #modale h2 {
