@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <!-- <link rel = "stylesheet" type = "text/css" href = "http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" >    -->
+   
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d632d302b9.js" crossorigin="anonymous"></script>
     <script type="module" defer src="script.js"></script>
@@ -24,7 +24,7 @@
                     <li>
                         <a href="#" class="item-nav">
                             <i class="fa-solid fa-house"></i>
-                            Acceuil
+                            Accueil
                         </a>
                     </li>
                     <li>
@@ -33,6 +33,12 @@
                             Les Wilders
                         </a>
                     </li>
+                    <!-- <li>
+                        <a href="#" class="item-nav">
+                            <img src="home.svg" class="homeImg" >
+                            Gallery
+                        </a>
+                    </li> -->
                     <li>
                         <a href="#" class="item-nav">
                             <i class="fa-solid fa-envelope"></i>
@@ -59,7 +65,7 @@
         <section class="firstSection" id="first">
             <div class="containerImg">
                 <img src="assets/photoGroupe.jpg" alt="wilders group photo">
-                <div class="filter"></div>
+                <div class="filtre"></div>
                 <div class="title">
                     <h1>Promo des Wilders</h1>
                     <p>novembre 2022</p>
@@ -72,7 +78,7 @@
             
         </section>
         <section class="formers">
-            <h2>Les formateurs</h2>
+            <h2 class="titleFormer">Les formateurs</h2>
             <div class="cards-former" >
                 <!-- <div class="card">
                  <div class="card-header">
@@ -95,13 +101,13 @@
                 </div>
 
                 <div class="filter">
-                    <p>Filter</p>
+                    <p>Filtrer</p>
                     <label class="switch">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="checkHomme"/>
                         <span>Homme</span>
                     </label>
                     <label class="switch">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="checkFemme"/>
                         <span>Femme</span>
                     </label>       
                     
@@ -110,7 +116,7 @@
         </section>  
         
         <section class="walders">  
-
+            <h2 class="titleWalders">Les walders</h2>
            
             <div class="cards" >
                  <!-- <div class="card">
@@ -125,7 +131,34 @@
             </div>
         </section>
 
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <ul class="gallery">
+                <li><img src="assets/images/gallery/alex1.jpg" alt=""></li>
 
+                <li><img src="assets/images/gallery/alioune2.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/alicia1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/cedricB2.jpg" alt=""></li>
+                
+                <li><img src="assets/images/gallery/himed1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/sam1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/razzak1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/seb1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/ahmid1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/sandra1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/youss1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/nicolasF1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/nicolasG1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/cedricC1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/moh1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/mustapha1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/ericR2.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/ericG1.jpg" alt=""></li>
+                
+                
+              </ul>
+            
+        </section>
         <!-- last section for the form -->
 
         <section class="contact">

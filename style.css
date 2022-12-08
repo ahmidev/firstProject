@@ -6,7 +6,7 @@ body {
 }
 
 .container-global {
-    
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -86,6 +86,10 @@ header {
     transition: all 0.5s;
     
 }
+.item-nav .homeImg {
+  width: 30px;
+  
+}
 .item-nav:hover {
     background-color: #a1a1a1;
 }
@@ -148,11 +152,11 @@ header {
 
 
 .firstSection {
+    width: 100vw;
     grid-column: 1 / 2;
     grid-row: auto;
    
 }
-
 
 
 
@@ -165,7 +169,7 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     
 }
-.filter {
+.filtre {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     background-color: rgba(222, 99, 99, 0.31);
@@ -205,13 +209,77 @@ header {
 
 
 /* ---- Partie filtre et recherche ---- */
-/* .secondSection {
-    
-} */
+.secondSection {
+    grid-column: 1/ 2;
+    height: 200px;
+    width: 100vw;
+    background-color: #ee8a8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parameter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox label {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #616161;
+  padding-bottom: 20px;
+}
+.searchBox input {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 3px solid rgb(149, 149, 149);
+}
+.filter {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #979797;
+  padding: 15px;
+}
+.filter p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family:  sans-serif;
+  font-weight: 800;
+  color: #000000;
+  padding: 15px;
+}
 
 
 
 /* ---- section cards walders ----  */
+.walders {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.walders .titleWalders {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 30px 0;
+}
 .cards {
     margin-top: 10px;
     display: flex;
@@ -271,7 +339,7 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .formers h2 {
+  .formers .titleFormer {
     font-size: 35px;
     font-weight: 800;
     
@@ -327,9 +395,52 @@ header {
 
 
 
+  /*------Gallery------*/
+
+  #gallery{
+    width: 100vw;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #gallery h2 {
+    font-size: 35px;
+    font-weight: 800;
+    margin: 20px 0;
+  }
+  .gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    padding: 0 14px;
+  }
+  .gallery::after {
+    content:'';
+    display:block;
+    flex-grow: 10;
+  }
+  .gallery li {
+    list-style-type: none;
+    height: 250px;
+    flex-grow: 1;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+   
+  }
+
+
   /*------Contact------*/
 
 .contact {
+  width: 100vw;
   grid-column: 1 /2;
   display: flex;
   justify-content: center;
@@ -338,7 +449,7 @@ header {
   
 }
 #box {
-  width: 320px;
+  width: 300px;
   height: 520px;
   background-color: rgba(139, 0, 0, 0.5);
   color: antiquewhite;
@@ -484,6 +595,7 @@ input[type="submit"]:hover {
   /*---------- footer ------------*/
 
   footer {
+    width: 100vw;
     grid-column: 1 / 2;
     background-color: #a1a1a1;
     height: 80px;
@@ -491,4 +603,5 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }

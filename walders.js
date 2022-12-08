@@ -67,7 +67,8 @@ export const walders = [
         githubId : "Laurie77170",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
         photo : "assets/images/laurie.png",
-        photoNb : "./assets/images/imagesNb/laurieNb.png"
+        photoNb : "./assets/images/imagesNb/laurieNb.png",
+        bool : true,
     },
     {
         nom : "CONIL",
@@ -87,7 +88,8 @@ export const walders = [
         githubId : "CouffignalCedric",
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
         photo : "assets/images/cedricC.png",
-        photoNb : "./assets/images/imagesNb/cedricCNb.png"
+        photoNb : "./assets/images/imagesNb/cedricCNb.png",
+        bool:true,
     },
     {
         nom : "CRITELLI",
@@ -97,7 +99,8 @@ export const walders = [
         githubId : "Meecore4",
         presentation : "Ancienne agent commercial, travaille sur l'annuaire ^^",
         photo : "assets/images/alicia.png",
-        photoNb : "./assets/images/imagesNb/aliciaNb.png"
+        photoNb : "./assets/images/imagesNb/aliciaNb.png",
+        bool : true,
     },
     {
         nom : "Doucet",

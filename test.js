@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-const obj = {firstName:"toto", age:45};
-const array = [obj,["blue", "red", "yellow"],1, "titi", 2];
+// <<<<<<< HEAD
+// const obj = {firstName:"toto", age:45};
+// const array = [obj,["blue", "red", "yellow"],1, "titi", 2];
 // const [a,...b] = array;
 //console.log(b);
  //const obj1 = {lastName:"titi",age:2,...obj};
@@ -17,11 +17,11 @@ const array = [obj,["blue", "red", "yellow"],1, "titi", 2];
 // for(let e in array){
 //     console.log(array[e])
 // }
-// 
-array.forEach(element => {
-    console.log(element)
-});
-=======
+// // 
+// array.forEach(element => {
+//     console.log(element)
+// });
+// =======
 // const titleCursorPosition = document.querySelector("#title-cursor-position");
 
 // document.addEventListener("mousemove", (event) => {
@@ -77,21 +77,21 @@ array.forEach(element => {
 // //console.log(random)
   
 //    console.log()
-function sayHello(userName) {
-  console.log(`Hello, ${userName}`);
-}
+// function sayHello(userName) {
+//   console.log(`Hello, ${userName}`);
+// }
 
-function sayWelcome(userName) {
-  console.log(`Welcome, ${userName}`);
-}
+// function sayWelcome(userName) {
+//   console.log(`Welcome, ${userName}`);
+// }
 
-let phrase = "is2 Thi1s T4est 3a";
-let p = phrase.split(' ');
-for(let i = 0; i < phrase.length; i++){
-  let numbers = parseInt(phrase[i]) ;
-  for(let i = 0; i < numbers.length; i++){
-    console.log(numbers[i])
-  }
- }
+// let phrase = "is2 Thi1s T4est 3a";
+// let p = phrase.split(' ');
+// for(let i = 0; i < phrase.length; i++){
+//   let numbers = parseInt(phrase[i]) ;
+//   for(let i = 0; i < numbers.length; i++){
+//     console.log(numbers[i])
+//   }
+//  }
  
 

@@ -44,10 +44,13 @@ itemNav.forEach(item =>{
 
   // cards for walders 
     for(let wal of walders){
+      
       createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photoNb);
         
   
      }
+
+ // cards for former
     for(let former of formateurs){
         console.log(former                                          )
       createCardFormer(`${former.nom.toUpperCase()} ${former.prenom}`, former.photoNb);
@@ -137,5 +140,13 @@ if (pop) {
 
   // filtrer les walders dans le input de recherche
 
- 
+//  const checkFemme = document.querySelector('#checkFemme');
+//  const checkHomme = document.querySelector('#checkHomme');
+
+//  checkFemme.addEventListener('input', (e)=>{
+//   console.log(e.target.checked)
+//  })
+//  console.log(checkFemme.checked);
+//  console.log(checkHomme);
+ //console.log(checkHomme.checked);
 
