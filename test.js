@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+const obj = {firstName:"toto", age:45};
+const array = [obj,["blue", "red", "yellow"],1, "titi", 2];
+// const [a,...b] = array;
+//console.log(b);
+ //const obj1 = {lastName:"titi",age:2,...obj};
+//console.log(obj1)
+//console.log(obj)
+// const {firstName} = obj;
+//console.log(firstName)
+//console.log(age)*
+//const array = ["blue","red","yellow"];
+
+// for(let i = 0; i < array.length; i++){
+//     console.log(array[i])
+// };
+// for(let e in array){
+//     console.log(array[e])
+// }
+// 
+array.forEach(element => {
+    console.log(element)
+});
+=======
 // const titleCursorPosition = document.querySelector("#title-cursor-position");
 
 // document.addEventListener("mousemove", (event) => {
@@ -61,10 +85,13 @@ function sayWelcome(userName) {
   console.log(`Welcome, ${userName}`);
 }
 
-function askUserName(callback) {
-  const name = prompt("Hey, what's your name?");
-  callback(name);
-}
+let phrase = "is2 Thi1s T4est 3a";
+let p = phrase.split(' ');
+for(let i = 0; i < phrase.length; i++){
+  let numbers = parseInt(phrase[i]) ;
+  for(let i = 0; i < numbers.length; i++){
+    console.log(numbers[i])
+  }
+ }
+ 
 
-askUserName(sayWelcome);
-askUserName(sayHello);

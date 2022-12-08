@@ -1,3 +1,4 @@
+
 import { walders } from "./walders.js";
 import { formateurs } from "./formers.js";
 import {createCard} from "./functionCreateCards.js"
@@ -5,10 +6,11 @@ import {createCardFormer} from "./functionCreateCardsFormer.js"
 
 
 
-// console.log(walders[0].nom)
+
 const btnResp = document.querySelector('.btn-responsive-menu ');
 
 const nav = document.querySelector('.navBar');
+
 
 const itemNav = document.querySelectorAll('.item-nav');
 console.log(itemNav)
@@ -19,8 +21,20 @@ btnResp.addEventListener('click', ()=>{
     nav.classList.toggle('activeMenu');
 })
 
-itemNav.forEach(x =>{
-    x.addEventListener('click', ()=> {
+
+itemNav.forEach(item =>{
+    item.addEventListener('click', ()=> {
+        btnResp.classList.toggle('active');
+        nav.classList.toggle('activeMenu');
+    })
+})
+
+
+
+
+  
+itemNav.forEach(item =>{
+    item.addEventListener('click', ()=> {
         btnResp.classList.toggle('active');
         nav.classList.toggle('activeMenu');
     })

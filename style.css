@@ -18,6 +18,7 @@ main {
  /* start header */
 header {
     position: fixed;
+    z-index: 2  ;
     width: 100vw;
     height: 70px;
     grid-column: 1 / 2;
@@ -102,6 +103,7 @@ header {
 
 .btn-responsive-menu {
     position: fixed;
+    z-index: 5;
     top: 25px;
     right: 10px;
     width: 40px;
@@ -262,6 +264,18 @@ header {
   }
 
   /* ---- section cards former ----  */
+  .formers {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .formers h2 {
+    font-size: 35px;
+    font-weight: 800;
+    
+  }
 .cards-former {
     margin-top: 10px;
     display: flex;
@@ -309,6 +323,103 @@ header {
     cursor: pointer;
     box-shadow: 7px 6px 19px 1px rgba(0,0,0,0.79);
   }
+
+
+
+
+  /*------Contact------*/
+
+.contact {
+  grid-column: 1 /2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+#box {
+  width: 320px;
+  height: 520px;
+  background-color: rgba(139, 0, 0, 0.5);
+  color: antiquewhite;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px rgba(139, 0, 0, 0.5);
+  padding: 80px 50px;
+}
+#box .icone {
+  width: 100px;
+  height: 100px;
+  background-color: darkred;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 160px;
+  top: -50px;
+}
+#box .icone i {
+  font-size: 55px;
+}
+#box h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #444444;
+  margin-bottom: 45px;
+}
+#box label {
+  display: block;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: #444444;
+}
+#box input {
+  margin-bottom: 20px;
+  width: 100%;
+}
+#box input:not([type="submit"]) {
+  background: none;
+  border: none;
+  border-bottom: 1px solid antiquewhite;
+  padding: 15px 0px;
+  outline: none;
+  color: rgb(195, 194, 194);
+  font-size: 17px;
+}
+#box textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid antiquewhite;
+  padding: 15px 0px;
+  outline: none;
+  color: rgb(195, 194, 194);
+  font-size: 17px;
+  width: 100%;
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 80px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: antiquewhite;
+  background-color: darkred;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(254, 130, 92);
+  transition: 0.7s;
+}
+
 
 
   /* ---------- pop-up ------------ */
@@ -367,4 +478,17 @@ header {
     font-size: 40px;
     text-decoration: none;
     color: tomato;
+  }
+
+
+  /*---------- footer ------------*/
+
+  footer {
+    grid-column: 1 / 2;
+    background-color: #a1a1a1;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
