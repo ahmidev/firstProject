@@ -1,13 +1,19 @@
 body {
+    width: 100vw;
     background: rgb(240, 240, 240);
     font-family: sans-serif;
     
 }
 
 .container-global {
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+}
+main {
+    width: 1200px;
+    margin: auto;
 }
  /* start header */
 header {
@@ -252,6 +258,7 @@ header {
     background-color:#ee8a8a;
     width: 100%;
     cursor: pointer;
+    box-shadow: 7px 6px 19px 1px rgba(0,0,0,0.79);
   }
 
   /* ---- section cards former ----  */
@@ -300,6 +307,7 @@ header {
     background-color:#ee8a8a;
     width: 100%;
     cursor: pointer;
+    box-shadow: 7px 6px 19px 1px rgba(0,0,0,0.79);
   }
 
 

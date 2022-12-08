@@ -10,7 +10,7 @@ export const formateurs = [
         titre : "Formateur React JS Java Angular",
         nom : "Belaston",
         prenom : "Yvens",
-        photo : "./assets/Yvens.jpeg",
-        photoNb : "./assets/Yvens.jpeg",
+        photo : "./assets/Yvens.png",
+        photoNb : "./assets/Yvens.png",
     }
 ];
