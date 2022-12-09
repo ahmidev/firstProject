@@ -43,25 +43,67 @@ itemNav.forEach(item =>{
 
 
   // cards for walders 
-  const femmes = walders.filter(number => number.bool);
-console.log(femmes)
-  //femmes.classList.add('femme');
+  
+ 
   for(let wal of walders){
       
     createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photoNb);
       
 
    }
+
+  //  checkbox femme
+  const femmes = walders.filter(number => number.bool);
+  console.log(femmes)
+  const cards = document.querySelector(".cards");
   const checkFemme = document.querySelector('#checkFemme');
   checkFemme.addEventListener('input', (e)=>{
     console.log(e.target.checked)
+
     if(e.target.checked){
-      
+      cards.innerHTML ="";
+      checkHomme.checked = "";
+      for(let femme of femmes){
+         createCard(femme.nom, femme.photo)
     }
-    
+  }
+    if(!e.target.checked){
+      cards.innerHTML ="";
+      
+      for(let walder of walders){
+         createCard(walder.nom, walder.photo)
+    }
+  }
     
     })
+
+
+  //  checkbox homme
+  const hommes = walders.filter(number => !number.bool);
+  console.log(hommes)
+  const checkHomme = document.querySelector('#checkHomme');
+ 
+  checkHomme.addEventListener('input', (e)=>{
+    console.log(e.target.checked)
+
+    if(e.target.checked){
+      cards.innerHTML ="";
+      checkFemme.checked = "";
+      for(let homme of hommes){
+         createCard(homme.nom, homme.photo)
+    }
+  }
+    if(!e.target.checked){
+      cards.innerHTML ="";
+      for(let walder of walders){
+         createCard(walder.nom, walder.photo)
+    }
+  }
     
+    })
+
+
+
 
  // cards for former
     for(let former of formateurs){
@@ -155,12 +197,6 @@ if (pop) {
 
  
  
-//  const checkHomme = document.querySelector('#checkHomme');
 
- checkFemme.addEventListener('input', (e)=>{
-  console.log(e.target.checked)
-  })
-//  console.log(checkFemme.checked);
-//  console.log(checkHomme);
- //console.log(checkHomme.checked);
 
+ 
