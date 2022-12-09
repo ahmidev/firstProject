@@ -79,6 +79,7 @@ export const walders = [
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
         photo : "assets/images/sandra.png",
         photoNb : "./assets/images/imagesNb/sandraNb.png",
+        bool:true,
     },
     {
         nom : "COUFFIGNAL",
@@ -89,7 +90,7 @@ export const walders = [
         presentation : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.",
         photo : "assets/images/cedricC.png",
         photoNb : "./assets/images/imagesNb/cedricCNb.png",
-        bool:true,
+        
     },
     {
         nom : "CRITELLI",

@@ -1,97 +1,112 @@
-// <<<<<<< HEAD
-// const obj = {firstName:"toto", age:45};
-// const array = [obj,["blue", "red", "yellow"],1, "titi", 2];
-// const [a,...b] = array;
-//console.log(b);
- //const obj1 = {lastName:"titi",age:2,...obj};
-//console.log(obj1)
-//console.log(obj)
-// const {firstName} = obj;
-//console.log(firstName)
-//console.log(age)*
-//const array = ["blue","red","yellow"];
+import { walders } from "./walders.js";
+import {createCard} from "./functionCreateCards.js";
 
-// for(let i = 0; i < array.length; i++){
-//     console.log(array[i])
-// };
-// for(let e in array){
-//     console.log(array[e])
-// }
-// // 
-// array.forEach(element => {
-//     console.log(element)
-// });
-// =======
-// const titleCursorPosition = document.querySelector("#title-cursor-position");
-
-// document.addEventListener("mousemove", (event) => {
-//   titleCursorPosition.innerHTML = `X:${event.clientX} , Y:${event.clientY}`;
-// });
+const searchInput = document.querySelector("#search")
+const searchResult = document.querySelector(".table-results")
 
 
+let dataArray;
 
-// const str = "This website is for losers LOL!";
-// function disemvowel(str) {
-  
-//   return str.replace(/o|a|i|u|e|O|A|I|U|E/g, "")
-// }
-// console.log(disemvowel(str));
+ function getUsers(){
 
-// let nb = 39 ;
-// let nbC = nb.toString();
-
-// function persistence(num) {
-//   function multiply(n){
-//     return n.reduce(function(a,b){return a*b;});
-// }
-// var count =0; 
-
-// while(num.toString().length > 1) {
-//     num= num.toString().split("");
-//     num = multiply(num);
-//     count++;
-//  }
-//  return count;
-// }
-// let nbS = nb.toString().split("")
-// //console.log(nbS[0]*nbS[1])
-
-// let phrase = "is2 Thi1s T4est 3a";
-// let p = phrase.split(' ');
-// for(let i = 0; i < phrase.length; i++){
-//   let numbers = parseInt(phrase[i]) ;
-//   for(let i = 0; i < numbers.length; i++){
-//     console.log(numbers[i])
-//   }
-//  }
-//  let random =  Math.floor(Math.random()*(14-10));
-//  let a = 0;
-//  let h4 = document.querySelector('h4');
-//  let image = document.querySelector('img');
-// let timerId = setInterval( ()=>{
-//   let random =  Math.floor(Math.random()*(15-10))
-//    console.log(random)
-//    image.src = `${random}.png`
-
-// } , 2000);
-// //console.log(random)
-  
-//    console.log()
-// function sayHello(userName) {
-//   console.log(`Hello, ${userName}`);
-// }
-
-// function sayWelcome(userName) {
-//   console.log(`Welcome, ${userName}`);
-// }
-
-// let phrase = "is2 Thi1s T4est 3a";
-// let p = phrase.split(' ');
-// for(let i = 0; i < phrase.length; i++){
-//   let numbers = parseInt(phrase[i]) ;
-//   for(let i = 0; i < numbers.length; i++){
-//     console.log(numbers[i])
-//   }
-//  }
  
+  
+  dataArray = orderList(walders)
+  createUserList(dataArray)
+}
 
+getUsers()
+
+function orderList(data) {
+
+  const orderedData = data.sort((a,b) => {
+    if(a.nom.toLowerCase() < b.nom.toLowerCase()) {
+      return -1;
+    }
+    if(a.nom.toLowerCase() > b.nom.toLowerCase()) {
+      return 1;
+    }
+    return 0;
+  })
+  
+  return orderedData;
+}
+
+
+function createUserList(usersList) {
+
+  usersList.forEach(user => {
+    console.log(user.phto)
+    // const listItem = document.createElement("div");
+    // listItem.setAttribute("class", "table-item");
+    // console.log(user)
+    // listItem.innerHTML = `
+    // <div class="container-img">
+    // <img src=${user.photo}>
+    // <p class="name">${user.nom} ${user.prenom}</p>
+    // </div>
+    // <p class="email">${user.email}</p>
+    
+    // `
+    const card =   document.createElement("div");
+    card.classList.add("card");
+    
+  
+    const cardHeader = document.createElement("div");
+    cardHeader.classList.add("card-header");
+    card.appendChild(cardHeader);
+    
+    const cardImg = document.createElement("div");
+    cardImg.style.backgroundImage = `url(${user.photoNb})`;
+    cardImg.style.backgroundColor = "rgb(202, 202, 202)";
+    cardImg.style.cursor = "pointer";
+    cardImg.style.transition = `all 1s`;
+    cardImg.classList.add("card-img");
+    cardHeader.appendChild(cardImg);
+  
+   
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+    card.appendChild(cardBody);
+   
+    const cardTitle = document.createElement("h2");
+    cardTitle.classList.add("card-title");
+  
+    cardTitle.innerHTML = user.nom;
+    
+    cardBody.appendChild(cardTitle);
+  
+  
+    const cardButton = document.createElement("button");
+    cardButton.classList.add("card-button");
+   
+    cardButton.innerHTML = `En savoir plus`;
+  
+    
+    cardBody.appendChild(cardButton);
+   
+
+    
+    searchResult.appendChild(card);
+    //searchResult.appendChild(listItem);
+  })
+
+}
+
+searchInput.addEventListener("input", filterData)
+
+function filterData(e) {
+
+  searchResult.innerHTML = ""
+
+  const searchedString = e.target.value.toLowerCase().replace(/\s/g, "");
+
+  const filteredArr = dataArray.filter(el => 
+    el.nom.toLowerCase().includes(searchedString) || 
+    el.prenom.toLowerCase().includes(searchedString) ||
+    `${el.prenom + el.nom}`.toLowerCase().replace(/\s/g, "").includes(searchedString) ||
+    `${el.nom + el.prenom}`.toLowerCase().replace(/\s/g, "").includes(searchedString)
+    )
+
+  createUserList(filteredArr)
+}

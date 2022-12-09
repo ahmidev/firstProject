@@ -43,12 +43,25 @@ itemNav.forEach(item =>{
 
 
   // cards for walders 
-    for(let wal of walders){
+  const femmes = walders.filter(number => number.bool);
+console.log(femmes)
+  //femmes.classList.add('femme');
+  for(let wal of walders){
       
-      createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photoNb);
-        
-  
-     }
+    createCard(`${wal.nom.toUpperCase()} ${wal.prenom}`, wal.photoNb);
+      
+
+   }
+  const checkFemme = document.querySelector('#checkFemme');
+  checkFemme.addEventListener('input', (e)=>{
+    console.log(e.target.checked)
+    if(e.target.checked){
+      
+    }
+    
+    
+    })
+    
 
  // cards for former
     for(let former of formateurs){
@@ -140,12 +153,13 @@ if (pop) {
 
   // filtrer les walders dans le input de recherche
 
-//  const checkFemme = document.querySelector('#checkFemme');
+ 
+ 
 //  const checkHomme = document.querySelector('#checkHomme');
 
-//  checkFemme.addEventListener('input', (e)=>{
-//   console.log(e.target.checked)
-//  })
+ checkFemme.addEventListener('input', (e)=>{
+  console.log(e.target.checked)
+  })
 //  console.log(checkFemme.checked);
 //  console.log(checkHomme);
  //console.log(checkHomme.checked);
