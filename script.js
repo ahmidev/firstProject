@@ -102,6 +102,32 @@ itemNav.forEach(item =>{
     
     })
 
+ // filtrer les walders dans le input de recherche
+ const searchInput = document.querySelector('#search')
+ 
+ searchInput.addEventListener("input", filterData)
+
+ function filterData(e) {
+ 
+   cards.innerHTML = ""
+ 
+   const searchedString = e.target.value.toLowerCase().replace(/\s/g, "");
+ 
+   const filteredArr = walders.filter(el => 
+     el.nom.toLowerCase().includes(searchedString) || 
+     el.prenom.toLowerCase().includes(searchedString) ||
+     `${el.prenom + el.nom}`.toLowerCase().replace(/\s/g, "").includes(searchedString) ||
+     `${el.nom + el.prenom}`.toLowerCase().replace(/\s/g, "").includes(searchedString)
+   
+     )
+     console.log(filteredArr)
+     for(let array of filteredArr){
+       console.log(array)
+       createCard(array.nom, array.photo)
+     }
+     
+   
+ }
 
 
 
@@ -193,10 +219,6 @@ if (pop) {
   });}
   
 
-  // filtrer les walders dans le input de recherche
-
  
- 
-
 
  
