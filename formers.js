@@ -12,5 +12,5 @@ export const formateurs = [
         prenom : "Yvens",
         photo : "./assets/Yvens.png",
         photoNb : "./assets/Yvens.png",
-    }
+    },
 ];

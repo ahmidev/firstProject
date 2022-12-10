@@ -64,7 +64,7 @@
         <!-- first section with main image and formatter card -->
         <section class="firstSection" id="first">
             <div class="containerImg">
-                <img src="assets/photoGroupe.jpg" alt="wilders group photo">
+                <img id="imgPrincipal" src="assets/photoGroupe.jpg" alt="wilders group photo">
                 <div class="filtre"></div>
                 <div class="title">
                     <h1>Promo des Wilders</h1>
@@ -97,26 +97,29 @@
             <div class="parameter">
                 <div class="searchBox">
                     <label for="">Recherche par nom</label>
-                    <input type="text" id="search" class="input" placeholder="faite une recherche de walders">
+                    <input type="text" id="search" class="input" placeholder="Recherche de wilders">
                 </div>
 
                 <div class="filter">
                     <p>Filtrer</p>
-                    <label class="switch">
-                        <input type="checkbox" id="checkHomme"/>
-                        <span>Homme</span>
-                    </label>
-                    <label class="switch">
-                        <input type="checkbox" id="checkFemme"/>
-                        <span>Femme</span>
-                    </label>       
+                    <div class="checkBox">
+                        <label class="switch">
+                            <input type="checkbox" id="checkHomme"/>
+                            <span>Homme</span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="checkFemme"/>
+                            <span>Femme</span>
+                        </label>  
+                    </div>
+                        
                     
                 </div>
             </div>
         </section>  
         
         <section class="walders">  
-            <h2 class="titleWalders">Les walders</h2>
+            <h2 class="titleWalders">Les wilders</h2>
            
             <div class="cards" >
                  <!-- <div class="card">
@@ -140,7 +143,7 @@
                 <li><img src="assets/images/gallery/alicia1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/cedricB2.jpg" alt=""></li>
                 
-                <li><img src="assets/images/gallery/himed1.jpg" alt=""></li>
+                <li><img class="img1" src="assets/images/gallery/himed1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/sam1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/razzak1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/seb1.jpg" alt=""></li>

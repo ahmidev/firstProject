@@ -1,4 +1,4 @@
-export const walders = [
+export const wilders = [
     {
         nom : "Abidar",
         prenom :"Himed" ,
@@ -183,14 +183,5 @@ export const walders = [
         photo : "assets/images/ericR.png",
         photoNb : "./assets/images/imagesNb/EricRNb.png"
     },
-    {
-        nom : "Reydet",
-        prenom :"Eric" ,
-        dateNaissance : "18/02/1980",
-        email : "ereydet@gmail.com",
-        githubId : "Reydet-Eric",
-        presentation : "Ancien conducteur FRET, ex-gestionnaire Prime  en reconversion develeoppeur Web",
-        photo : "assets/images/ericR.png",
-        photoNb : "./assets/images/imagesNb/EricRNb.png"
-    }
+    
 ];

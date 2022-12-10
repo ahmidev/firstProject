@@ -211,14 +211,18 @@ header {
 /* ---- Partie filtre et recherche ---- */
 .secondSection {
     grid-column: 1/ 2;
-    height: 200px;
+    height: 300px;
     width: 100vw;
     background-color: #ee8a8a;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 5px solid #444444;
+    box-shadow: 2px 5px  4px rgba(0,0,0,0.8);
+    border-style:ridge;
 }
 .parameter {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,30 +235,69 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
+  
 }
 .searchBox label {
   font-size: 25px;
-  font-family: sans-serif;
-  font-weight: 800;
-  color: #616161;
+  font-weight: 700;
   padding-bottom: 20px;
 }
+
 .searchBox input {
-  width: 200px;
+  width: 250px;
   height: 40px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 15px;
   border: 3px solid rgb(149, 149, 149);
+  outline:none;
+  box-shadow: 2px 5px  4px rgba(0,0,0,0.8);
 }
+
+input[type="checkbox"]{
+  appearance: none;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s; 
+  
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;  
+  border-radius: 50%;  
+  transition: 0.5s;    
+}
+
+input[type="checkbox"]:checked::before {
+  left: 34px;
+
+}
+
+input[type="checkbox"]:checked {
+  background-color: #5bee6d;
+}
+
 .filter {
-  width: 300px;
+  width: 250px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
   background-color: #979797;
   padding: 15px;
+  box-shadow: 2px 5px  4px rgba(0,0,0,0.8);
 }
 .filter p {
   font-size: 20px;
@@ -265,9 +308,23 @@ header {
   padding: 15px;
 }
 
+.switch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+
+}
+
+.checkBox label span {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
 
-/* ---- section cards walders ----  */
+
+/* ---- section cards wilders ----  */
 .walders {
   width: 100vw;
   display: flex;
