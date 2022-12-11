@@ -340,7 +340,7 @@ function popUp(boutons, wilder){
           img.setAttribute("src", wilders[i].photo);
           // img.setAttribute("alt", this.dataset.nom);
           img.getAttribute("src");
-          p.innerHTML = wilders[i].presentation;
+          p.innerHTML = wilders[i].presentation ||wilders[i].titre ;
           github.href =`https://github.com/${wilders[i].githubId}`;
           mail.href = `mailto:${wilders[i].email}`;
           });
@@ -358,22 +358,21 @@ function popUp(boutons, wilder){
  
 // image aleatoire 
 
-// const imgPrincipal = document.querySelectorAll('ul li img');
-// imgPrincipal.forEach((li,i)=>{
-//   console.log(li)
-// })
+const imgPrincipal = document.querySelector('.bloc-droit-accueil');
+console.log(imgPrincipal)
 
-// let randomIgm = function(){
-//    const alea =Math.floor(Math.random()*10);
-//    imgPrincipal.forEach((li,i)=>{
-//    li.src = `./assets/${alea}.jpg`
-//   })
-  //  imgPrincipal.src = `./assets/${alea}.jpg`
-  //  console.log( alea);
+let randomIgm = function(){
+   const alea =Math.floor(Math.random()*9);
+   imgPrincipal.style.backgroundImage = `url(./assets/${alea}.jpg)`;
+   imgPrincipal.style.transition=  ' all 0.5s ease-in;';
    
-  //};
 
- //setInterval(randomIgm,2000);
+   console.log('couc')
+  }
+ 
+   
+  
 
-//imgPrincipal.src = `./assets/${imgAleatoire}.jpg`
-//console.log(setInterval(randomIgm,1000))
+ setInterval(randomIgm,2000);
+
+

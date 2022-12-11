@@ -3,8 +3,8 @@ export const formateurs = [
         titre : "Formateur JS, React JS",
         nom : "SLIM",
         prenom : "Youssef",
-        photo : "./assets/youssef.png",
-        photoNb : "./assets/youssef.png",
+        photo : "./assets/images/youssef.png",
+        photoNb : "./assets/images/youssef.png",
     },
     {
         titre : "Formateur React JS Java Angular",

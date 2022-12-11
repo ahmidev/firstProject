@@ -150,13 +150,89 @@ header {
 /* End btn responsive menu */
 
 
+/*------------ Accueil Fondu ----------*/
 
-.firstSection {
-    width: 100vw;
-    grid-column: 1 / 2;
-    grid-row: auto;
-   
+ 
+
+.firstSection{
+  height: 450px;
+  display: flex;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: auto;
+  
 }
+
+.bloc-gauche-accueil {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background: #ee8a8a;
+  box-shadow: 20px 0 100px 100px #ee8a8a;
+}
+h1 {
+  color: #f1f1f1;
+  font-family: Montserrat, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin-left: 2vw;
+  white-space: wrap;
+}
+
+.firstSection p {
+  
+  color: #f1f1f1;
+  font-size: 20px;
+  text-align: justify;
+  width: 600px;
+  margin-left: 2vw;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.cont-btn-home {
+  display: flex;
+}
+.btn-accueil {
+  font-size: 16px;
+  text-align: center;
+  color:  #f1f1f1;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 40px;
+  border: 1px solid #f1f1f1;
+  width: 150px;
+  cursor: pointer;
+
+}
+.btn-accueil:hover {
+  transition: all 0.2s ease;
+  color: #000;
+  background: #f1f1f1;
+}
+.b1 {
+  margin-left: 2vw;
+}
+.b2 {
+  margin-left: 10px;
+}
+
+.bloc-droit-accueil {
+  background-image: url(assets/photoGroupe.jpg);
+  width: 60%;
+  height: 100%;
+  background-position: 40% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.2 ease-in;
+  
+}
+
+
 
 
 
