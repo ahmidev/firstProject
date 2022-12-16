@@ -1,236 +1,215 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Navbar Responsive</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect"       href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+   
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d632d302b9.js" crossorigin="anonymous"></script>
+    <script type="module" defer src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    
-    <div class="containerGlobal">
-
-        <header class="navbar">
-
- 
-                <div class="contLogo">
-                    <img src="assets/logoWild.png" alt="logo wild code school">
-                </div>
-
-                <nav class="contItems">    
-                    <a href="#" class="items">Home</a>
-                    <a href="#" class="items">Walders</a>
-                    <a href="#" class="items">Contact</a>
-                    
-                </nav>
-
-                <div class="btnResponsiveMenu">
-                    <div class="lignes"></div>
-                    <div class="lignes"></div>
-                    <div class="lignes"></div>
-                </div>
-          
-         
-
-        </header>
-        <!-- first section with main image and formatter card -->
-        
-        <section class="firstSection" id="first">
-            <div class="containerImgTitle">
-                <div class="containerImg">
-                    <img src="assets/photoGroupe.jpg" alt="wilders group photo">
-                    <div class="test"></div>
-                </div>
-                
-                
-                <div class="title">
-                    <h1>Promo des Wilders</h1>
-                    <p>novembre 2022</p>
-
-                </div>
-                
-            </div>
-            <div class="formerCard">
-                <img src="assets/youssef.png" alt=" former" class="youssef">
-                <div class="formerName">
-                    <h2>Formateur</h2>
-                    <p>Youssef SLIM</p>
-                </div>
-                    
+    <div class="container-global">
+            <!-- header -->
+        <header>
+            <div class="logo">
+                <img src="assets/logoWild.png" alt="photo de groupe des wilders" id="imgLogo">
             </div>
             
+            <nav class="navBar">
+                <ul class="listeNav">
+                    <li>
+                        <a href="#" class="item-nav">
+                            <i class="fa-solid fa-house"></i>
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#wilders" class="item-nav">
+                            <i class="fa-solid fa-people-line"></i>
+                            Les Wilders
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="#contact" class="item-nav">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <!-- button responsive menu for mobile -->
+            <div class="btn-responsive-menu">
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+
+            </div>
+        </header>
+        <!-- end header -->
+       
+
+        
+
+        <!-- first section with main image and formatter card -->
+        <section class="firstSection" id="first">
+          <div class="bloc-gauche-accueil">
+            <h1>Promo des Wilders</h1>
+            <!-- En majuscule test -->
+            <p>Formation Up To Dev</p>
+            <p>Novembre 2022.</p>
+            <p>SNCF.</p>
+            <div class="cont-btn-home">
+              <a href="#wilders" class="btn-accueil b1">Wilders</a>
+              <a href="#contact" class="btn-accueil b2">Contact</a>
+            </div>
+            </div>
+          <div class="bloc-droit-accueil"></div>  
+          
+           
+            
+            
         </section>
-
-
+        <section class="formers">
+            <h2 class="titleFormer title1" >Les formateurs</h2>
+            <div class="cards-former" >
+              
+           </div>
+        </section>
+        <!-- second section with the search fields, the filter and the maps of each wilder -->
+        <div class="separation"></div>
         <section class="secondSection" id="second">
             <div class="parameter">
-                <div class="search">
+                <div class="searchBox">
                     <label for="">Recherche par nom</label>
-                    <input type="text">
+                    <input type="text" id="search" class="input" placeholder="Recherche de wilders">
                 </div>
-    
+
                 <div class="filter">
-                    <p>Filter</p>
-                    <div class="homme">
-                        <p>Homme</p>
-                        <!-- <input type="checkbox" id="box" /> -->
-                        <label   for="box">Homme</label>               
-                          
+                    <p>Filtrer</p>
+                    <div class="checkBox">
+                        <label class="switch">
+                            <input type="checkbox" id="checkHomme"/>
+                            <span>Homme</span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="checkFemme"/>
+                            <span>Femme</span>
+                        </label>  
                     </div>
-                    <div class="femme">
-                        <p>Femme</p>
-                        <label  class="switch">
-                            <input type="checkbox" id="checkboxFemme" />
-                            <span></span>
-                        </label> 
-                    </div>
-                    
-                    
+                        
                     
                 </div>
             </div>
-            <div class="cardsWilders">
-                <input type="checkbox" id="box" />
-                        <label   for="box">Homme</label>    
-                <div class="card-wilder" id="femme" >   
-                    <div class="containerImgWalder" >
-                        <img src="assets/fille2.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
+        </section>  
+        
+        <section class="wilders" id="wilders">  
+            <h2 class="titleWilders title1">Les wilders</h2>
+           
+            <div class="cards" >
+                 <!-- <div class="card">
+                  <div class="card-header">
+                    <div class="card-img" ></div>
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title">Billy</h2>
+                    <button class="card-button">Adopt Now</button>
+                  </div>
+                </div>  -->
+            </div>
+        </section>
+        <div class="separation"></div>
+        <section id="gallery">
+            <h2 class="title1">Gallerie</h2>
+            <ul class="gallery">
+                <li><img  class="imgGal" src="assets/images/gallery/alex1.jpg" alt=""></li>
+
+                <li><img  class="imgGal" src="assets/images/gallery/alioune2.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/alicia1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/cedricB2.jpg" alt=""></li>
+                
+                <li><img class="imgGal"  src="assets/images/gallery/himed1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/sam1.jpg" alt=""></li>
+                <li><img class="imgGal"  src="assets/images/gallery/razzak1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/seb1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/ahmid1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/sandra1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/youss1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/nicolasF1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/nicolasG1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/cedricC1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/moh1.jpg" alt=""></li>
+                <li><img class="imgGal"  src="assets/images/gallery/mustapha1.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/ericR2.jpg" alt=""></li>
+                <li><img  class="imgGal" src="assets/images/gallery/ericG1.jpg" alt=""></li>
+                
+                
+              </ul>
+            
+        </section>
+        <!-- last section for the form -->
+        <div class="separation"></div>
+        <section class="contact" id="contact">
+            <div id="box">
+                <div class="icone">
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
-                <div class="card-wilder" id="femme"> 
-                    
-                    
-                    <div class="containerImgWalder " >
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder" id="homme">   
-                    <div class="containerImgWalder" >
-                        <img src="assets/homme1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder" id="homme">   
-                    <div class="containerImgWalder" >
-                        <img src="assets/homme2.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <!-- <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div>
-                <div class="card-wilder">   
-                    <div class="containerImgWalder">
-                        <img src="assets/fille1.jpg" alt="wilder photo">
-                    </div>
-                    <h2>Nom Prénom</h2>
-                    <button>Voir plus</button>
-                </div> -->
-    
-    
-    
+                <h2>Contacter les wilders</h2>
+                <form action="" id="contactForm">
+                    <fieldset>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="name" placeholder="Ecrire votre nom">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Ecrire votre email">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" placeholder="Ecrire votre message"></textarea>
+
+                    </fieldset>
+                    <input type="submit" value="Envoyer" />
+                </form>
             </div>
         </section>
 
+        <!-- fenetre modal  -->
+        <div id="pop">
+            <div id="fenetre">
+              <div id="modale">
+                <h2>Lorem.</h2>
+                <img src="" alt="walders" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur fuga sunt libero amet asperiores nesciunt?
+                </p>
+                <div class="iconPop">
+                    <a id="github" href=""><i class="fa-brands fa-github"></i></a>
+                    <a id= "mail" href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+               
+              </div>
+            </div>
+        </div>
+        <div class="modal2">
+            
+            <div class="pop2">
+                <img src="" alt="" class="pop2Img">
+            </div>
+        
+        </div>
+        
+        <footer><p>© Wild Code School 2022</p></footer>
+
+
+
     </div>
+   
 
 
-    <script src="app.js"></script>
+    
 </body>
 </html>
