@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect"       href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
     <script src="https://kit.fontawesome.com/d632d302b9.js" crossorigin="anonymous"></script>
     <script type="module" defer src="script.js"></script>
     <title>Document</title>
@@ -28,19 +29,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="item-nav">
+                        <a href="#wilders" class="item-nav">
                             <i class="fa-solid fa-people-line"></i>
                             Les Wilders
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#" class="item-nav">
-                            <img src="home.svg" class="homeImg" >
-                            Gallery
-                        </a>
-                    </li> -->
+                   
                     <li>
-                        <a href="#" class="item-nav">
+                        <a href="#contact" class="item-nav">
                             <i class="fa-solid fa-envelope"></i>
                             Contact
                         </a>
@@ -63,36 +59,31 @@
 
         <!-- first section with main image and formatter card -->
         <section class="firstSection" id="first">
-            <div class="containerImg">
-                <img id="imgPrincipal" src="assets/photoGroupe.jpg" alt="wilders group photo">
-                <div class="filtre"></div>
-                <div class="title">
-                    <h1>Promo des Wilders</h1>
-                    <p>novembre 2022</p>
-
-                </div>
-                
+          <div class="bloc-gauche-accueil">
+            <h1>Promo des Wilders</h1>
+            <!-- En majuscule test -->
+            <p>Formation Up To Dev</p>
+            <p>Novembre 2022.</p>
+            <p>SNCF.</p>
+            <div class="cont-btn-home">
+              <a href="#wilders" class="btn-accueil b1">Wilders</a>
+              <a href="#contact" class="btn-accueil b2">Contact</a>
             </div>
+            </div>
+          <div class="bloc-droit-accueil"></div>  
+          
            
             
             
         </section>
         <section class="formers">
-            <h2 class="titleFormer">Les formateurs</h2>
+            <h2 class="titleFormer title1" >Les formateurs</h2>
             <div class="cards-former" >
-                <!-- <div class="card">
-                 <div class="card-header">
-                   <div class="card-img" ></div>
-                 </div>
-                 <div class="card-body">
-                   <h2 class="card-title">Billy</h2>
-                   <button class="card-button">Adopt Now</button>
-                 </div>
-               </div>  -->
+              
            </div>
         </section>
         <!-- second section with the search fields, the filter and the maps of each wilder -->
-
+        <div class="separation"></div>
         <section class="secondSection" id="second">
             <div class="parameter">
                 <div class="searchBox">
@@ -118,8 +109,8 @@
             </div>
         </section>  
         
-        <section class="walders">  
-            <h2 class="titleWalders">Les wilders</h2>
+        <section class="wilders" id="wilders">  
+            <h2 class="titleWilders title1">Les wilders</h2>
            
             <div class="cards" >
                  <!-- <div class="card">
@@ -133,9 +124,9 @@
                 </div>  -->
             </div>
         </section>
-
+        <div class="separation"></div>
         <section id="gallery">
-            <h2>Gallery</h2>
+            <h2 class="title1">Gallerie</h2>
             <ul class="gallery">
                 <li><img src="assets/images/gallery/alex1.jpg" alt=""></li>
 
@@ -143,7 +134,7 @@
                 <li><img src="assets/images/gallery/alicia1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/cedricB2.jpg" alt=""></li>
                 
-                <li><img class="img1" src="assets/images/gallery/himed1.jpg" alt=""></li>
+                <li><img src="assets/images/gallery/himed1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/sam1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/razzak1.jpg" alt=""></li>
                 <li><img src="assets/images/gallery/seb1.jpg" alt=""></li>
@@ -163,8 +154,8 @@
             
         </section>
         <!-- last section for the form -->
-
-        <section class="contact">
+        <div class="separation"></div>
+        <section class="contact" id="contact">
             <div id="box">
                 <div class="icone">
                     <i class="fa-solid fa-envelope"></i>
@@ -203,6 +194,12 @@
               </div>
             </div>
         </div>
+        <div class="modal2">
+            
+        <div class="pop2"><img src="" alt="" id="pop2"></div>
+        
+        </div>
+        
         <footer><p>© Wild Code School 2022</p></footer>
 
 

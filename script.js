@@ -18,13 +18,16 @@ btnResp.addEventListener('click', ()=>{
 })
 
 // permet de fermer le menu une fois cliqué sur un element
+const vw = Math.max(document.querySelector.clientWidth || 0, window.innerWidth || 0)
+//console.log(vw)
+if(vw<768){
 itemNav.forEach(item =>{
     item.addEventListener('click', ()=> {
         btnResp.classList.toggle('active');
         nav.classList.toggle('activeMenu');
     })
 })
-
+}
 // ---- end mernu burger -----//
 
 
@@ -365,9 +368,9 @@ let randomIgm = function(){
    const alea =Math.floor(Math.random()*9);
    imgPrincipal.style.backgroundImage = `url(./assets/${alea}.jpg)`;
    imgPrincipal.style.transition=  ' all 0.5s ease-in;';
-   
+   console.log(alea)
 
-   console.log('couc')
+   console.log('coucou')
   }
  
    
@@ -375,4 +378,31 @@ let randomIgm = function(){
 
  setInterval(randomIgm,2000);
 
+ 
+// photo de la gallerie
 
+//   let imagesGallery = document.querySelectorAll('.gallery li img');
+//   let pop = document.querySelector("#pop");
+//   // Variables liées à la modale
+//   let h2 = document.querySelector("#modale h2");
+//   let img = document.querySelector("#modale img");
+//   let p = document.querySelector("#modale p");
+//   let github = document.querySelector('#github');
+//   let mail = document.querySelector('#mail');
+// imagesGallery.forEach(imgG => {
+//     imgG.addEventListener('click',()=>{
+//       pop.classList.add("active");
+//       h2.style.display = "none";
+//       img.setAttribute("src", imgG.src);
+//       // img.setAttribute("alt", this.dataset.nom);
+//       img.getAttribute("src");
+//       p.style.display = "none";
+//       github.style.display = "none";
+//       mail.style.display = "none";
+//     })
+//     if (pop) {
+//       pop.addEventListener("click", function () {
+//         this.classList.remove("active");
+//       });}
+      
+// })
