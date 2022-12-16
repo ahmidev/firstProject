@@ -342,7 +342,7 @@ function popUp(boutons, wilder){
           h2.innerText = wilders[i].nom.toUpperCase()+" "+wilders[i].prenom;
           img.setAttribute("src", wilders[i].photo);
           // img.setAttribute("alt", this.dataset.nom);
-          img.getAttribute("src");
+         // img.getAttribute("src");
           p.innerHTML = wilders[i].presentation ||wilders[i].titre ;
           github.href =`https://github.com/${wilders[i].githubId}`;
           mail.href = `mailto:${wilders[i].email}`;
@@ -381,28 +381,24 @@ let randomIgm = function(){
  
 // photo de la gallerie
 
-//   let imagesGallery = document.querySelectorAll('.gallery li img');
-//   let pop = document.querySelector("#pop");
-//   // Variables liées à la modale
-//   let h2 = document.querySelector("#modale h2");
-//   let img = document.querySelector("#modale img");
-//   let p = document.querySelector("#modale p");
-//   let github = document.querySelector('#github');
-//   let mail = document.querySelector('#mail');
-// imagesGallery.forEach(imgG => {
-//     imgG.addEventListener('click',()=>{
-//       pop.classList.add("active");
-//       h2.style.display = "none";
-//       img.setAttribute("src", imgG.src);
-//       // img.setAttribute("alt", this.dataset.nom);
-//       img.getAttribute("src");
-//       p.style.display = "none";
-//       github.style.display = "none";
-//       mail.style.display = "none";
-//     })
-//     if (pop) {
-//       pop.addEventListener("click", function () {
-//         this.classList.remove("active");
-//       });}
+  let imagesGallery = document.querySelectorAll('.imgGal');
+  let pop2 = document.querySelector(".modal2");
+  let imgModal = document.querySelector(".pop2Img");
+ // console.log(imgModal.src)
+  // Variables liées à la modale
+  
+imagesGallery.forEach(imgG => {
+    imgG.addEventListener('click',()=>{
+      pop2.classList.add("active");
+      console.log(pop2.src)
+      imgModal.src = imgG.src;
       
-// })
+     
+     
+    })
+    if (pop2) {
+      pop2.addEventListener("click", function () {
+        this.classList.remove("active");
+      });}
+      
+})
